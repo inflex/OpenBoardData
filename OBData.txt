@@ -5,10 +5,19 @@
 # Copyright Paul L Daniels, 2019
 # Github URL: https://github.com/inflex/OpenBoardData
 #
-# Line format: BoardID Netname Diode Volt Resistance Comment (to end of line)
+# NOTE: This file is generated from the editable files in the
+#			folder heirachy.  
+#
+#				DO NOT EDIT OR ADDING DATA TO THIS FILE
+#
+# CONSOLIDATED Line format for consolidated file: BoardID Netname Diode Volt Resistance Comment (to end of line)
 # Fields are separated by single space, except for comment, which 
 # runs to the end of the current line. If you want an explicit line-break in 
 # the comments, use a \n character pair.
-# 
 #
-820-00165 PPBUS_G3H 0.30 12.56 200 If voltage 12.4 or lower then change SMC
+#	ol = over limit (usually implies open circuit / NC )
+#  na = non-applicable 
+#
+820-00165 PPVBAT_G3H_CHGR_REG 0.30 12.56 200 If voltage 12.4 or lower then change SMC
+820-00165 PPBUS_G3H 0.30 12.56 - If voltage 12.4 or lower then change SMC
+820-00165 EDP_BKLT_EN na ol 204 silly values
