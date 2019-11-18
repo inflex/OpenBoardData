@@ -1,0 +1,1 @@
+820-00165 PPBUS_G3H 0.30 12.56 200 If voltage 12.4 or lower then change SMC
