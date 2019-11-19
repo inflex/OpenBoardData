@@ -5,6 +5,11 @@ COMMENT
 #
 #
 #
+#    Each row represents a single net
+#    Each field is separated by a single space
+#    ol = over limit,  na = non applicable, comment optional
+#
+# NETNAME  DIODE_VALUE  NORMAL_VOLTAGE  RESISTANCE  COMMENT
 #50_0_ANT
 #50_0_COM
 #50_1_ANT
