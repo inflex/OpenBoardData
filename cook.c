@@ -22,18 +22,18 @@ int main( int argc, char **argv ) {
 		if (*line == ' ') continue;
 		if (*line == '\0') continue;
 
+		if (strncmp(line, "BRAND ", 6)==0) continue;
+		if (strncmp(line, "TYPE ", 5)==0) continue;
+		if (strncmp(line, "COMMENT ", 8)==0) continue;
+
 		p = strrchr(line,'\n'); if (p) *p = '\0';
 		p = strrchr(line,'\r'); if (p) *p = '\0';
 
 		switch (state) {
 			case 0:
-				if (strncmp(line, "BRAND ", 6)==0) continue;
-				if (strncmp(line, "TYPE ", 5)==0) continue;
-				if (strncmp(line, "COMMENT ", 8)==0) continue;
 
 				if (strncmp(line, "ID ", 3)==0) {
 					snprintf(id, sizeof(id), "%s", line +3);
-
 					state = 1;
 				}
 				break;
