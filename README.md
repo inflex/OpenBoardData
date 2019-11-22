@@ -16,4 +16,4 @@ Data for board repairs, including network volt, diode, and resistance measuremen
 * Line format is as follows;
 * > NET_NAME  DIODE_READING  VOLTAGE_READING  RESISTANCE_READING  COMMENT
 * Net aliases can be done by prefixing '===' to the name of the aliased network
-* > 820-00165 PPVBAT_G3H_CHGR_REG ===PPBUS_G3H
+* > PPVBAT_G3H_CHGR_REG ===PPBUS_G3H
