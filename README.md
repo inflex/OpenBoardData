@@ -17,3 +17,15 @@ Data for board repairs, including network volt, diode, and resistance measuremen
 * > NET_NAME  DIODE_READING  VOLTAGE_READING  RESISTANCE_READING  COMMENT
 * Net aliases can be done by prefixing '===' to the name of the aliased network
 * > PPVBAT_G3H_CHGR_REG ===PPBUS_G3H
+
+### Building and cooking the data
+OBData build system is written for Linux, since for the most part people will only be using the cooked OBData.txt file, there isn't a compelling need to go beyond the current linux build system ( I will however see if I can create a Travis CI for this job ).
+
+#### How to build OBData.txt
+* clone the repo
+> git clone https://github.com/inflex/OpenBoardData
+* Change in to the newly created git folder for OpenBoardData
+> cd OpenBoardData
+* Run the build script
+> ./build-obdata.sh
+
