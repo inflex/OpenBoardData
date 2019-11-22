@@ -3,7 +3,7 @@ BRAND
 TYPE 
 COMMENT 
 #
-#      Having some fun testing github
+#
 #
 #    Each row represents a single net
 #    Each field is separated by a single space
