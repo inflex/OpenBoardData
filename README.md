@@ -14,4 +14,6 @@ Data for board repairs, including network volt, diode, and resistance measuremen
 * Each net is defined as a single line, fields are SINGLE-SPACE separated except for the comment;
 * Diode, Voltage and Resistance readings can be also declared as 'na' (Not-applicable) and 'ol' (Over-limit / open )
 * Line format is as follows;
-> NET_NAME  DIODE_READING  VOLTAGE_READING  RESISTANCE_READING  COMMENT
+* > NET_NAME  DIODE_READING  VOLTAGE_READING  RESISTANCE_READING  COMMENT
+* Net aliases can be done by prefixing '===' to the name of the aliased network
+* > 820-00165 PPVBAT_G3H_CHGR_REG ===PPBUS_G3H
