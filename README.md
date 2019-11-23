@@ -19,9 +19,9 @@ Data for board repairs, including network volt, diode, and resistance measuremen
 * > PPVBAT_G3H_CHGR_REG ===PPBUS_G3H
 
 ### How to contribute (in order of preferred method...)
-1 You can fork this repo, make the changes, and then perform a PR/Pull-Request to send your changes back to here
-2 Create a new "issue" and submit your data
-3 Diff, or the entire updated file via email to pldaniels@gmail.com
+* You can fork this repo, make the changes, and then perform a PR/Pull-Request to send your changes back to here
+* Create a new "issue" and submit your data
+* Diff, or the entire updated file via email to pldaniels@gmail.com
 
 ### The board I want isn't in the repo --- halp!
 * Copy an existing file, edit the contents as required, and place it in an appropriate folder.   If unsure, raise an issue and ask
