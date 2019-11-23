@@ -18,6 +18,14 @@ Data for board repairs, including network volt, diode, and resistance measuremen
 * Net aliases can be done by prefixing '===' to the name of the aliased network
 * > PPVBAT_G3H_CHGR_REG ===PPBUS_G3H
 
+### How to contribute (in order of preferred method...)
+1 You can fork this repo, make the changes, and then perform a PR/Pull-Request to send your changes back to here
+2 Create a new "issue" and submit your data
+3 Diff, or the entire updated file via email to pldaniels@gmail.com
+
+### The board I want isn't in the repo --- halp!
+* Copy an existing file, edit the contents as required, and place it in an appropriate folder.   If unsure, raise an issue and ask
+
 ### Building and cooking the data
 OBData build system is written for Linux, since for the most part people will only be using the cooked OBData.txt file, there isn't a compelling need to go beyond the current linux build system ( I will however see if I can create a Travis CI for this job ).
 
@@ -28,4 +36,6 @@ OBData build system is written for Linux, since for the most part people will on
 > cd OpenBoardData
 * Run the build script
 > ./build-obdata.sh
+
+
 
