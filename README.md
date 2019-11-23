@@ -17,6 +17,8 @@ Data for board repairs, including network volt, diode, and resistance measuremen
 * > NET_NAME  DIODE_READING  VOLTAGE_READING  RESISTANCE_READING  COMMENT
 * Net aliases can be done by prefixing '===' to the name of the aliased network
 * > PPVBAT_G3H_CHGR_REG ===PPBUS_G3H
+* Diode and Voltage readings are to be in volts units, no suffixes/prefixes, just whole floating point only
+* Resistance reading can be in the form of infix or suffixed numbers, ie, 1200.0, 1K2, 1.2K
 
 ### How to contribute (in order of preferred method...)
 * You can fork this repo, make the changes, and then perform a PR/Pull-Request to send your changes back to here
