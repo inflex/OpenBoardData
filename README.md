@@ -3,6 +3,16 @@ Data for board repairs, including network volt, diode, and resistance measuremen
 
 ![Initial work](https://github.com/inflex/OpenBoardData/blob/master/resources/ss1.png)
 
+### Introduction
+With board repairs, one thing that's often very useful to have on hand, aside from the boardview and schematic, is a set of known-good data values for networks, including diode-mode, resistance, or normal operating voltages; with this data complementing the boardview and schematic, it can facilitate the diagnosis and repair of faulty equipment.
+
+
+OpenBoardData is a community contributed database of known good data values.  There are no (current) limitations on brands or types of boards.  New boards and categories can be added, and all data is in plain-text, easy to ready and add/ammend using only a text editor or even the Github web interface.
+
+### Software currently supporting OpenBoardData
+* FlexBV - http://pldaniels.com/flexbv  (alpha release, please contact pldaniels@gmail.com if you wish to paticipate and have an existing FlexBV licence)
+* OpenBoardView - http://openboardview.org **coming soon**
+
 ### Format of data
 * Each board has its own data file containing the nets for the board
 * Lines prefixed with a '#' character at the start are ignored
