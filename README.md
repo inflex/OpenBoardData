@@ -17,7 +17,7 @@ OpenBoardData is a community contributed database of known good data values.  Th
 
 ### Software currently supporting OpenBoardData
 * FlexBV - http://pldaniels.com/flexbv  (alpha release, please contact pldaniels@gmail.com if you wish to paticipate and have an existing FlexBV licence)
-* OpenBoardView - http://openboardview.org **coming soon**
+* OpenBoardView - http://openboardview.org ( Inflex development fork now available at https://github.com/inflex/OpenBoardView )
 
 ### Format of data
 * Each board has its own data file containing the nets for the board
