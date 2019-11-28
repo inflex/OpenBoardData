@@ -1,7 +1,9 @@
 # OpenBoardData
 Data for board repairs, including network volt, diode, and resistance measurements
 
-![Initial work](https://github.com/inflex/OpenBoardData/blob/master/resources/ss1.png)
+![Initial work in FlexBV](https://github.com/inflex/OpenBoardData/blob/master/resources/ss1.png)
+
+![Initial work in OpenBoardView](https://github.com/inflex/OpenBoardData/blob/master/resources/obv-obdata.png)
 
 ### Introduction
 With board repairs, one thing that's often very useful to have on hand, aside from the boardview and schematic, is a set of known-good data values for networks, including diode-mode, resistance, or normal operating voltages; with this data complementing the boardview and schematic, it can facilitate the diagnosis and repair of faulty equipment.
