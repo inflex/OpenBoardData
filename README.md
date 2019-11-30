@@ -13,7 +13,7 @@ OpenBoardData is a community contributed database of known good data values.  Th
 
 ### Software currently supporting OpenBoardData
 * FlexBV - http://pldaniels.com/flexbv  (alpha release, please contact pldaniels@gmail.com if you wish to paticipate and have an existing FlexBV licence)
-* OpenBoardView - http://openboardview.org **coming soon**
+* OpenBoardView - (PLD build) https://github.com/inflex/OpenBoardView/releases
 
 ### Format of data
 * Each board has its own data file containing the nets for the board
@@ -39,17 +39,4 @@ OpenBoardData is a community contributed database of known good data values.  Th
 
 ### The board I want isn't in the repo --- halp!
 * Copy an existing file, edit the contents as required, and place it in an appropriate folder.   If unsure, raise an issue and ask
-
-### Building and cooking the data
-OBData build system is written for Linux, since for the most part people will only be using the cooked OBData.txt file, there isn't a compelling need to go beyond the current linux build system ( I will however see if I can create a Travis CI for this job ).
-
-#### How to build OBData.txt
-* clone the repo
-> git clone https://github.com/inflex/OpenBoardData
-* Change in to the newly created git folder for OpenBoardData
-> cd OpenBoardData
-* Run the build script
-> ./build-obdata.sh
-
-
 
