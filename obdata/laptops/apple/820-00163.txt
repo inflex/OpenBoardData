@@ -1938,7 +1938,7 @@ COMMENT
 #PPVOUT_S5_PCH_DCPSUSBYP_R
 #PPVRTC_G3H
 #PPVTTDDR_S3
-#PPVTT_S0_DDR
+PPVTT_S0_DDR 0.36 na na Thanks to Louis Rossmann. Incorrect on Schematic. https://www.youtube.com/watch?v=nalJezd76b4
 #PVDDCI_GPU_EN
 #PVDDCI_PGOOD
 #PVIN_S4_TPAD_EN
