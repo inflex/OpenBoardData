@@ -4,7 +4,7 @@ TYPE
 COMMENT 
 #
 #
-#
+#    With the help of @TheDude75 and @daifuku74
 #    Each row represents a single net
 #    Each field is separated by a single space
 #    ol = over limit,  na = non applicable, comment optional
@@ -15,8 +15,8 @@ COMMENT
 #4V5_REG_IN
 #5VS4_VFB1_RR
 #>Á
-#ADAPTER_SENSE
-#ALL_SYS_PWRGD
+ADAPTER_SENSE 0.597 3.3 1.9M
+ALL_SYS_PWRGD 0.430 3.4 ol
 #ALL_SYS_PWRGD_R
 #AP_CLKREQ_L
 #AP_PCIE_WAKE_L
@@ -105,8 +105,8 @@ COMMENT
 #CAM_UARTRXD
 #CAM_XTAL_FREQ
 #CAM_XTAL_SEL
-#CHGR_ACIN
-#CHGR_AGATE
+CHGR_ACIN 0.511 3.9 21.6K
+CHGR_AGATE 0.620 na 870K
 #CHGR_AGATE_DIV
 #CHGR_AMON
 #CHGR_BGATE
@@ -122,9 +122,9 @@ COMMENT
 #CHGR_CSO_P
 #CHGR_CSO_R_N
 #CHGR_CSO_R_P
-#CHGR_DCIN
+CHGR_DCIN 0.580 16.23 na High Resistance between K and M
 #CHGR_DCIN_D_R
-#CHGR_ICOMP
+CHGR_ICOMP 0.713 0 ol
 #CHGR_ICOMP_RC
 #CHGR_LGATE
 #CHGR_PHASE
@@ -134,7 +134,7 @@ COMMENT
 #CHGR_UGATE
 #CHGR_VCOMP
 #CHGR_VCOMP_R
-#CHGR_VFRQ
+CHGR_VFRQ 0.475 0 670K
 #CHGR_VNEG
 #CHGR_VNEG_R
 #CLK25M_CAM_CLKN
