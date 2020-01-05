@@ -2,6 +2,13 @@ ID 820-00045
 BRAND 
 TYPE 
 COMMENT 
+NOTES_BEGIN
+NOTE_BEGIN Charge system check
+Check voltage of PPBUS_G3H ( C6494 is a convenient place );
+13V = not charging, no battery detected
+10V = empty battery, give it a minute or two and see if charge rate increases towards 3A
+NOTE_END
+NOTES_END
 #
 #
 #
