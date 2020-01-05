@@ -2,6 +2,73 @@ ID 820-00165
 BRAND 
 TYPE 
 COMMENT 
+DIAGNOSIS_DATA_BEGIN
+SECT_BEGIN Overview
+NOTE_BEGIN Summary
+The Macbook 820-00165 / A1466 generally is a well behaved board but does have some signature quirks.
+Always use a genuine magsafe 2 power brick else you will get a no-boot situation and you'll be chasing your tail for days.
+NOTE_END
+SECT_END
+
+SECT_BEGIN Backlight
+NOTE_BEGIN Diagnosing
+Check your voltage on backlight output.  
+If below 1V probably a bad fuse or MOSFET.
+If 8.4V check EN signal on [p:U7701:3], if present, check [n:BKL_PWM], if > 1V then replace [p:U7701]
+NOTE_END
+SECT_END
+
+SECT_BEGIN Power Rails
+NOTE_BEGIN S5
+[n:PPBUS_G3H]
+[n:PPBUS_S5_HS_COMPUTING_ISNS]
+[n:PPBUS_S5_HS_OTHER_ISNS]
+[n:PPDCIN_G3H_ISOL]
+[n:PP3V42_G3H]
+[n:PPVRTC_G3H] [p:C1910:1]
+[n:PP5V_S5]
+[n:PP3V3_S5]
+NOTE_END
+
+NOTE_BEGIN S4/S3
+[n:PP5V_S4RS3]
+[n:PP3V3_S4SW_SNS]
+[n:PP3V3_S4]
+[n:PP3V3_S3]
+[n:PP1V8_S3]
+[n:PP1V2_S3]
+NOTE_END
+
+NOTE_BEGIN S0
+[n:PP1V05_SUS] ( needs  [n:PP3V3_S5] -> [n:PP3V3_SUS_FET_R] )
+[n:PP5V_S0]
+[n:PP3V3_S0]
+[n:PP3V3_S0SW_SSD]
+[n:PP1V5_S0]
+[n:PP0V6_S0_DDRVTT]
+[n:PP1V05_S0]
+[n:PP1V05_S0SW_PCH_HSIO]
+[n:PPVCC_S0_CPU]
+[n:PPHV_S0SW_LCDBKLT]
+NOTE_END
+
+NOTE_BEGIN Missing PM_SLP_S4_L
+Missing [n:PM_SLP_S4_L] can sometimes be diagnosed by going through and ensuring all the following signals are present;
+[n:PPVRTC_G3H]
+[n:RTC_RESET_L]
+[n:SRTCRST_L]
+[n:PCH_INTVRMEN]
+[n:PCH_DSWVRMEN]
+[n:PCH_CLK32K_RTCX1]
+[n:PP3V3_S5]
+[n:PM_DSW_PWRGD]
+[n:PP3V3_SUS]
+[n:PM_BATLOW_L]
+[n:PM_RSMRST_L]
+[n:PM_PWRBTN_L]
+NOTE_END PM_SLP
+SECT_END
+DIAGNOSIS_DATA_END
 #
 #
 #    With the help of TheDude75
