@@ -1,7 +1,82 @@
 ID 820-00239
 BRAND 
 TYPE 
-COMMENT 
+COMMENT
+DIAGNOSIS_DATA_BEGIN
+SECT_BEGIN CD3215 Repeat checks for each unit, U3100,3200, UB300, 400
+
+NOTE_BEGIN UB300
+1. Check 5V on [p:FB200:1]
+2. Check 
+  3V3 on [p:CB308:1]
+  1V8 on [p:CB305:1]
+  1V8 on [p:CB306:1]
+  1V1 on [p:CB304:1]
+
+3. Check 26V on [p:QB300:1] and [p:QB300:4]
+4. Check 
+  PPDCIN_G3H on [p:QB300:8]
+NOTE_END
+
+NOTE_BEGIN UB400
+1. Check 5V on [p:FB201:1]
+2. Check 
+  3V3 on [p:CB408:1]
+  1V8 on [p:CB405:1]
+  1V8 on [p:CB406:1]
+  1V1 on [p:CB404:1]
+
+3. Check 26V on [p:QB400:1] and [p:QB400:4]
+4. Check 
+  PPDCIN_G3H on [p:QB400:8]
+NOTE_END
+
+NOTE_BEGIN U3100
+1. Check 5V on [p:F3000:1]
+2. Check 
+  3V3 on [p:C3108:1]
+  1V8 on [p:C3105:1]
+  1V8 on [p:C3106:1]
+  1V1 on [p:C3104:1]
+
+3. Check 26V on [p:Q3100:1] and [p:Q3100:4]
+4. Check 
+  PPDCIN_G3H on [p:Q3100:8]
+NOTE_END
+
+NOTE_BEGIN U3200
+1. Check 5V on [p:F3001:1]
+2. Check 
+  3V3 on [p:C3208:1]
+  1V8 on [p:C3205:1]
+  1V8 on [p:C3206:1]
+  1V1 on [p:C3204:1]
+
+3. Check 26V on [p:Q3200:1] and [p:Q3200:4]
+4. Check 
+  PPDCIN_G3H on [p:Q3200:8]
+  8v6/20v [p:D6902:3]
+  P_IN [p:U7000:10]
+  MPM_PBUS [p:U7000:5]
+  
+5. Check [n:TBA_VDDA] and [n:TBA_VDDP]
+	Measure [p:R7075] for 4R7 value
+
+6. Check for EN (high) on [n:PM_EN_P3V3_G3H]
+
+7. 
+	Check 3V3 on [p:R5940:2]
+	Check for EN (low) on [n:HPWR_EN_L] 
+	Check for EN (low) on [n:SMC_WAKE_L] (M13, WAKE_L)
+	Check [p:L5001] continuity and 3V3
+	Check [p:R6915] continuity and 3V3
+	
+
+
+
+NOTE_END
+SECT_END
+DIAGNOSIS_DATA_END
 #
 #
 #
