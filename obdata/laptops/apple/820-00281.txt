@@ -60,19 +60,19 @@ NOTE_END
 
 NOTE_BEGIN CD3215 Sequence II
 4. Check
-	[p:U6903:10] 3V3 (or 5V0) [n:PM_EN_P3V3_G3H]
-	[p:L6900:2] 3V3 [n:PP3V3_G3H]
-	[p:C5013:1] 1V2 [n:PP1V2_G3H_SMC_VDDC]
-	[p:C5167:1] 3V0 [n:PP3V0_G3H_AVREF_SMC]
-	[p:R3042:1] 3V3 (clock) [n:SMBUS_SMC_4_G3H_SCL]
-	[p:R3041:1] 3V3 (data) [n:SMBUS_SMC_4_G3H_SDA]
+[p:U6903:10] 3V3 (or 5V0) [n:PM_EN_P3V3_G3H]
+[p:L6900:2] 3V3 [n:PP3V3_G3H]
+[p:C5013:1] 1V2 [n:PP1V2_G3H_SMC_VDDC]
+[p:C5167:1] 3V0 [n:PP3V0_G3H_AVREF_SMC]
+[p:R3042:1] 3V3 (clock) [n:SMBUS_SMC_4_G3H_SCL]
+[p:R3041:1] 3V3 (data) [n:SMBUS_SMC_4_G3H_SDA]
 
-	[p:C7016:1] 5V0 [n:TBA_AUX_DET]
-	[p:R7090:2] 3V3 [n:SMC_RST_L]
+[p:C7016:1] 5V0 [n:TBA_AUX_DET]
+[p:R7090:2] 3V3 [n:SMC_RST_L]
 
-   [p:D6902:3] 8V6/20V
-   [p:U7000:10] P_IN
-   [p:U7000:5] MPM_PBUS
+[p:D6902:3] 8V6/20V
+[p:U7000:10] P_IN
+[p:U7000:5] MPM_PBUS
   
 	If still not finding anything, try ...
 Check [n:TBA_VDDA] and [n:TBA_VDDP]
