@@ -2,6 +2,69 @@ ID 820-01521
 BRAND 
 TYPE 
 COMMENT 
+
+DIAGNOSIS_DATA_BEGIN
+SECT_BEGIN CD3215 Repeat checks for each unit, U3100,3200, UB300, 400
+
+NOTE_BEGIN U3100
+1. Check 5V on [p:F3000:1]
+2. Check 
+  3V3 on [p:C3108:1]
+  1V8 on [p:C3105:1]
+  1V8 on [p:C3106:1]
+  1V1 on [p:C3104:1]
+
+3. Check 26V on [p:Q3100:1] and [p:Q3100:4]
+4. Check 
+  PPDCIN_G3H on [p:Q3100:8]
+NOTE_END
+
+NOTE_BEGIN U3200
+1. Check 5V on [p:F3001:1]
+2. Check 
+  3V3 on [p:C3208:1]
+  1V8 on [p:C3205:1]
+  1V8 on [p:C3206:1]
+  1V1 on [p:C3204:1]
+
+3. Check 26V on [p:Q3200:1] and [p:Q3200:4]
+4. Check 
+  PPDCIN_G3H on [p:Q3200:8]
+NOTE_END
+
+NOTE_BEGIN CD3215 Sequence II
+4. Check
+[p:U6903:10] 3V3 (or 5V0) [n:PM_EN_P3V3_G3H]
+[p:L6900:2] 3V3 [n:PP3V3_G3H]
+[p:C5013:1] 1V2 [n:PP1V2_G3H_SMC_VDDC]
+[p:C5167:1] 3V0 [n:PP3V0_G3H_AVREF_SMC]
+[p:R3042:1] 3V3 (clock) [n:SMBUS_SMC_4_G3H_SCL]
+[p:R3041:1] 3V3 (data) [n:SMBUS_SMC_4_G3H_SDA]
+
+[p:C7016:1] 5V0 [n:TBA_AUX_DET]
+[p:R7090:2] 3V3 [n:SMC_RST_L]
+
+[p:D6902:3] 8V6/20V
+[p:U7000:10] P_IN
+[p:U7000:5] MPM_PBUS
+  
+	If still not finding anything, try ...
+Check [n:TBA_VDDA] and [n:TBA_VDDP]
+Measure [p:R7075] for 4R7 value
+
+Check for EN (high) on [n:PM_EN_P3V3_G3H]
+
+Check 3V3 on [p:R5940:2]
+Check for EN (low) on [n:HPWR_EN_L] 
+Check for EN (low) on [n:SMC_WAKE_L] (M13, WAKE_L)
+Check [p:L5001] continuity and 3V3
+Check [p:R6915] continuity and 3V3
+
+NOTE_END
+
+SECT_END
+DIAGNOSIS_DATA_END
+
 #
 #
 #
