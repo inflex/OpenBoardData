@@ -4,7 +4,6 @@ TYPE
 COMMENT 
 #
 #
-#    With the help of @TheDude75 and @daifuku74
 #    Each row represents a single net
 #    Each field is separated by a single space
 #    ol = over limit,  na = non applicable, comment optional
