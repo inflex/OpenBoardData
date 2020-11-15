@@ -68,6 +68,50 @@ Missing [n:PM_SLP_S4_L] can sometimes be diagnosed by going through and ensuring
 [n:PM_PWRBTN_L]
 NOTE_END PM_SLP
 SECT_END
+
+SECT_BEGIN Power Sequence
+NOTE_BEGIN G3 to S3
+G3 STATE
+
+[n:PPDCIN_G3H] = 3V
+Magsafe Detects 68kOhm impedance
+[n:PPDCIN_G3H] >= 14.5V Air 16.5-20V Pro
+[n:DCIN_ISOL_GATE_R] = 6.8V
+[n:PPDCIN_ISOL] >= 14.5V Air 16.5-20V Pro
+[n:PP3V42_G3H] = 3.425V [n:CHGR_ACIN] >= 3.3V [n:CHGR_DCIN] >= 14.5V Air 16.5-20V Pro
+[n:PPVRTC_G3H] = 3.3V [n:SMC_LSOC_RST_L] = 3.42V [n:SMBUS_SMC_5_G3_SCL] = 3.42V [n:SMBUS_SMC_5_G3_SCL] = 3.42V [n:PP5V1_CHGR_VDD] = 5.5V
+[n:PCH_DSWVRMEN] = 3.3V [n:PCH_CLK32K_RTCX1] = 32kHz [n:PCH_SRTCRST_L] = 3.3V [n:SMC_ONOFF_L] = 3.42V [n:PP3V3_S5_AVREF_SMC] = 3.3V [n:SMC_BC_ACOK] = 3.42V
+[n:PCH_INTRUDER_L] = 3.3V [n:PCH_INTVRMEN] = 3.3V [n:RTC_RESET_L] = 3.3V [n:SMC_RESET_L] = 3.42V [n:PP3V3_S5_SMC_VDDA] = 3.42V (diode mode should NOT read OL with inductor removed
+[n:PPBUS_G3H] = 8.2V Air 12.2V Pro
+SMBUS "5" is the communication SMC -> Charger IC
+[n:PPBUS_G3H] = 8.56V Air 12.56V Pro (asserts running SMC)
+[n:SMC_PM_G2_EN] = 3.42V [n:SYS_ONEWIRE] 3.42V (green MagSafe -> 2s -> orange MagSafe)
+[n:P3V3S5_EN_R] = 3.3V [n:PP5V_S5] = 5V [n:P5VP3V3_VREG3] = 3.3V
+[n:PP3V3_S5] = 3.3V
+[n:SPIROM_USE_MLB] = 3.3V [n:PM_PWRBTN_L] = 3.3V [n:S5_PWRGD = 3.42V] [n:PM_BATLOW_L] = 3.3V (Genuine MagSafe)
+
+S5 STATE WORKING NORMALLY
+
+[n:SMC_ADAPTER_EN] = 3.42V [n:PM_DSW_PWRGD] = 3.42V
+[n:PM_SLP_SUS_L] = 3.3V -> Deep State
+[n:DCINVSENS_EN_L] = 0V
+[n:SMC_DCIN_VSENSE] >= 2.3V && <= 3.3V (Ignored in SMC Bypass mode) [n:P3V3SUS_EN] 3.3V
+[n:PP3V3_SUS] = 3.3V [n:PP1V05_SUS] = 1.05V
+[n:PM_RSMRST_L] = 3.3V [n:XDP_PCH_TMS] = 1.05V [n:XDP_PCH_TDO] = 1.05V [n:XDP_PCH_TDI] = 1.05V
+[n:PM_DLK32K_SUSCLK_R = 32kHz]
+[n:SMC_CLK32K] = 32kHz
+[n:PM_PWRBTN_L] = 0 > 15ms [n:PM_PWRBTN_L] = 3.3V
+[n:PM_SLP_S5_L] = 3.3V
+[n:PM_SLP_S4_L] 3.3V [n:S4_PWR_EN] 3.3V 
+
+S4 STATE
+[n:PP3V3_S4] = 3.3V
+[n:SMC_SENSOR_PWR_EN] = 3.3V
+
+S3 STATE
+NOTE_END G3 to S3
+SECT_ENT
+
 DIAGNOSIS_DATA_END
 #
 #
