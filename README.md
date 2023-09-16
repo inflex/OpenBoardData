@@ -1,3 +1,12 @@
+### This project has been moved to its own website for now due to the way in which the data is being contributed via FlexBV; as such we needed a directly accessible online database to do the work.
+
+### Please visit - https://openboarddata.org 
+
+
+
+
+
+
 # OpenBoardData
 Data for board repairs, including network volt, diode, and resistance measurements
 
@@ -19,6 +28,3 @@ OpenBoardData is a community contributed database of known good data values.  Th
 * FlexBV - http://pldaniels.com/flexbv  (alpha release, please contact pldaniels@gmail.com if you wish to paticipate and have an existing FlexBV licence)
 * OpenBoardView - (PLD build) https://github.com/inflex/OpenBoardView/releases
 
-This project has been moved to its own website for now due to the way in which the data is being contributed via FlexBV; as such we needed a directly accessible online database to do the work.
-
-Please visit - https://openboarddata.org 
